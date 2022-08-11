@@ -1,0 +1,102 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href=' ./static/style.css')
+    link(rel='stylesheet', href=' ./static/contact.css')
+    title Contact
+  body
+    #loader
+      img#loaderSvg(src='  ./static/loader.svg', alt='')
+    nav#nav.navBar
+      .top
+        .logo
+          h1
+            a#main.menuItems(href='/') Pratik Shinde
+          p Web Developer
+        div
+          img#ham(src='  ./static/ham.png', alt='')
+          ul.menu
+            li
+              a.menuItems(href='/resume ') Resume
+            | |
+            li
+              a.menuItems(href='/project ') Projects
+            | |
+            li
+              a.menuItems(href='/contact ') Contact
+      .bottom
+        ul.bMenu
+          li
+            a.menuItems(href='/resume ') Resume
+          li
+            a.menuItems(href='/project ') Projects
+          li
+            a.menuItems(href='/contact ') Contact
+    .mainContainer
+      h1 Contact
+      .container
+        .cLeft
+          .cInfo
+            h4 Phone
+            img#wtsap(src='  ./static/wtsap.svg', alt='')
+            span 7262804491
+            br
+            img#call(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABmJLR0QA/wD/AP+gvaeTAAAFJUlEQVRYhc2Zb0wbdRjHn2tLr9CyUv5cy6CU8W8jmqHO4PAPRl5sc2YQzXRBYwBh6hhjm04w88WML1ycYLDTsCVj7G9G5IXKcKgvUDCBRcC4aWABKZaWQkuhlJbSK72eL0ha1l6v196BfF/97nfP8+ST53f3u+f5HWKz2WDzifd/A1Brk2IJaO712keuzvWM4jMZQuykfP9j0ekbhoVQPltukvjC9MP3C4PeGQlPdGNbTZJgy8ZgUSyiw+P60HBrLRMA2D3Oc8aOjWGCQCyz23ZYe7HfPhpo2mcf7bL+uSFUD2PNu+01usv/umaDWatnu+bcHGwo1ZMtldoLFmIpNNYKSZw23NK55mjCLRLLnxtvs8dyAfHAaajVtQYj82G1Wfr+WtaFjPib/cHPi/dZYjWkvJGJyjW46ehkC2X6fVjfLQwwDNpkujPvtrPBiuOL1cryTFSudZmP6VoDyXxYC+6gK+0nK+FoNHWywVol+1JZnoFiWpf5hP6q32r6sBIFscyD/mob7rb9zZJMxherlRUZKKbBTX7PmW+Xz0QV+pV55kEvmbuLYh+lvHVk8tL95cmwEDW46ZT+eovq3dVLX7aekmSFFWjGbQ3LPiz5slUoyW1AOj2kh6FnllAe7FZzWhXDIBZiqVbXqsFNGSjWmPqmd96XLRlf/EQ4H+OX4/KZG4dkUisr4vhiCiwAOCjbzTBiNqrYK81jw7RALB3XXdHgJpUwsSm1XLaGyR/rWcn2LFTBJGh10l4eIGyYanVXxnGjSph4XvlWgkDiZ/AQFgJIWUJhyKDPiLfnizMjZgKAU/ob47gxA8W+TqsMZPLHAoAXYh/Ji1bRBy2MzWXDBAA8QHaItqqVFX5r5xVFGTiBm8q1zW6SCBY0lidqST+SEiVjCUcjijJwG4odkhXQ+Ng8zo8MbU5yZd2ogrQYVYlF2aJkGrcx53S9/qaLdK8PVRAsISL4OPmgiCek8Rx0aM4Y2gnG2y8HWACQLkw6jr1I79xrH2kw3iaB5JqKtk8slu4qiXuS3r/DOqQ2/cgpEkDI9vU97KXHY0J8kb6x9DeZ7nCbsxBYAoT/SfJrIfeCdsvdczMdzD/zbLEAIF4gUSsr5FFSerMO69BpQxvu4ebdpO6qA6XBjUd1lxeJZXqzfHHW2ZRSERLlnfGQni7bvW8tv4/i06lR8VWJRcGKx0iwAGDEOXVssnWZdNGbZaGKT1NKV9d90KH5avanMef0WoOnxTn1ihL6Gj0MLAAYWBqvmwq9i8byRDXYvh77cB9Vdw4AUn7MCWz/ni07ucECgF77yBlDOyf7+3OSHR/IDyRQpS1sLAD4wzFRP3XT4Qmxmkwk4YmqsT0lUv/dMRIsABhxTr2vv24lHOzJAKBAklOHHcDWvOwRYgGABjee1F8zc3FSAgASnqhJWZYrSlm9jPyQMgOVX0g7zFXVZfc4G42+Tp3V2WlyVNxF1ds7o9NYUwEAaF1m75jtke5qwx74zEagTBTzjjk4aY5C+HWK4npFCX19FlJlCc97x5wdgBdLd7Wo3slm1s8F6lXZ7gJxjvcy8jeRUi7S3WLubrP003QogSqQ5Hy29XU+4ssRx1ir0uDGBmPnvWUtE+MsVNGcVhnDQ9dOrgsWAJBA/mIbvjbXM4bP0JilC5POKyviAzrY9cLywvUtjbZb7g45JgKLxLxo1dmUUik/JtBxfbG8shKOHvvIwNI/Y/jMrNsWx4t5RZZ/SFYgQPiU9huEFa426R+yTYr1H+FHBBEN7x3uAAAAAElFTkSuQmCC')
+            span 9405814464
+          #email.cInfo
+            h4 Email
+            span pratikshinde7262@gmalil.com
+        //
+          <div class="cRight">
+          <form action="#">
+          <div class="divContainer">
+          <div class="inputContainer">
+          <span>First Name</span>
+          <input type="text" name="firstname">
+          </div>
+          <div class="inputContainer">
+          <span>Last Name</span>
+          <input type="text" name="lastname">
+          </div>
+          </div>
+          <div class="divContainer">
+          <div class="inputContainer">
+          <span>Email</span>
+          <input type="email" name="email">
+          </div>
+          <div class="inputContainer">
+          <span>Subject</span>
+          <input type="text" name="sub">
+          </div>
+          </div>
+          <div class="divContainer">
+          <div class="inputContainer">
+          <span>Message</span>
+          <textarea name="msg" id="msg"></textarea>
+          </div>
+          <div id="bc" class="inputContainer">
+          <button id="sub" type="submit">Submit</button>
+          </div>
+          </div>
+          </form>
+          </div>
+    hr
+    footer
+      .info
+        h4 Phone
+        span 9405814464
+      .info
+        h4 Email
+        span pratikshinde7262@gmalil.com
+      .info
+        h4 Follow Me
+        a(href='https://www.linkedin.com/in/pratik-shinde-156993213')
+          img(src='  ./static/li.svg', alt='LI')
+        a(href='https://www.youtube.com/channel/UCRaj3KHYyN4MghIuujFMVEQ')
+          img(src='  ./static/yt.svg', alt='YT')
+      .copy
+        h4 &copy; 2022 By Pratik Shinde
+    script(src=' ./static/script.js')

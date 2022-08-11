@@ -1,0 +1,16 @@
+{
+  "name": "portfoli-website",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pratik Shinde",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}

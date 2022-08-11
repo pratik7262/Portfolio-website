@@ -1,0 +1,131 @@
+.mainContainer {
+    width: 80vw;
+    margin: auto;
+    margin-top: 7vw;
+}
+
+.mainContainer h1 {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+}
+
+.mainContainer hr {
+    width: 80vw;
+}
+
+.rLeft {
+    width: 20vw;
+}
+
+
+.rLeft h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+
+.duration {
+    width: 20vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: right;
+    padding-right: 4vw;
+}
+
+.rInfo {
+    width: 40vw;
+}
+
+.rInfo p, .rInfo li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 1vw;
+}
+
+.rInfo h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1vw;
+}
+
+.infoContainer {
+    width: 60vw;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+.work {
+    display: flex;
+    margin: 7vw 0;
+}
+
+.education {
+    display: flex;
+    margin-top: 8vw;
+    margin-bottom: 3vw;
+}
+
+.skills {
+    display: flex;
+    margin: 7vw 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .mainContainer {
+        margin-top: 7vh;
+    }
+
+    .mainContainer h1 {
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .rLeft {
+        width: 100%;
+        margin:2vh auto;
+        padding: 0%;
+    }
+
+    .rInfo {
+        width: 100%;
+        margin:2vh auto;
+        padding: 0%;
+
+    }
+
+    .work, .education, .skills {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .duration {
+        display: none;
+    }
+
+    .rInfo p, .rInfo li {
+        font-size: 1.1rem;
+        font-weight: lighter;
+    }
+
+    .rInfo h4{
+        margin: 2vh 0;
+        font-weight: lighter;
+    }
+
+    .rLeft h3{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}

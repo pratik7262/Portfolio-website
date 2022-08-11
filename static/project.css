@@ -1,0 +1,116 @@
+.mainContainer {
+    width: 80vw;
+    margin: 5vw auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer h1 {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 4vw 0;
+}
+
+
+.pLeft h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+    margin-bottom: 1vw;
+}
+
+.pLeft p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+
+
+.pRight {
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.pRight img {
+    border: 2px solid black;
+}
+
+#music {
+    width: 20vw;
+    margin: auto;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.jCenter{
+    justify-content: center;
+}
+
+.w-50 {
+    width: 50vw;
+}
+
+.h-30 {
+    height: 30vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+        margin-top: 7vh;
+    }
+
+    .mainContainer h1 {
+        font-size: 2rem;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .pLeft {
+        width: 100%;
+        margin: 4vh 0;
+    }
+
+    .pLeft h3 {
+        margin-bottom: 3vh;
+    }
+
+    .pLeft p {
+        text-align: justify;
+        font-size: 1.1rem;
+        font-weight: 50;
+    }
+
+    #music {
+        width: 60vw;
+        margin: auto;
+    }
+
+    .pRight {
+        width: 100%;
+        padding: 0;
+    }
+
+    .h-30{
+        display: none;
+    }
+
+    .w-50{
+        width: 40vh;
+    }
+}

@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vw;
+}
+
+.container img {
+    width: 35vmax;
+    margin: 2vw;
+    margin-top: 5vw;
+}
+
+
+#photo {
+    width: 50vw;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#text {
+    width: 40vw;
+    text-align: left;
+    height: 100%;
+    margin-bottom: 8vw;
+}
+
+#text h2 {
+    font-size: 5rem;
+    font-family: 'Merriweather', serif;
+    margin: 2vw;
+    margin-bottom: 2vw;
+}
+
+#text h3 {
+    font-size: 2rem;
+    margin-left: 2vw;
+    margin-bottom: 0.7vw;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#text p {
+    font-size: 1.3rem;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-top: 4vh;
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 33vh;
+        margin: 0;
+        margin-bottom: 6vh;
+    }
+
+    #photo {
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    #text {
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        font-weight: 100;
+    }
+}

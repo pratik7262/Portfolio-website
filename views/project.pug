@@ -1,0 +1,118 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href=' ./static/style.css')
+    link(rel='stylesheet', href='./static/project.css')
+    title Projects
+  body
+    #loader
+      img#loaderSvg(src='  ./static/loader.svg', alt='')
+    nav#nav.navBar
+      .top
+        .logo
+          h1
+            a#main.menuItems(href='/') Pratik Shinde
+          p Web Developer
+        div
+          img#ham(src='  ./static/ham.png', alt='')
+          ul.menu
+            li
+              a.menuItems(href='/resume ') Resume
+            | |
+            li
+              a.menuItems(href='/project ') Projects
+            | |
+            li
+              a.menuItems(href='/contact ') Contact
+      .bottom
+        ul.bMenu
+          li
+            a.menuItems(href='/resume ') Resume
+          li
+            a.menuItems(href='/project ') Projects
+          li
+            a.menuItems(href='/contact ') Contact
+    .mainContainer
+      h1 Projects
+      .project
+        .pLeft
+          h3 Password Genarator
+          p
+            | This is a Node.js project in which you can genarate the password of length 15 charecter consisting
+            | numbers and alphabates. this project use genarate-password module of Node.js to genarate password To visit website 
+            a(href='http://notestaker.epizy.com') Click Here
+
+        .pRight.jCenter
+          img.w-50(src='  ./static/genarate-password.png', alt='')
+      .project
+        .pLeft
+          h3 Notes Taking Website
+          p
+            | This is a website which can be used for taking notes of your work, important Things etc. This website
+            | is made with help of BOOTSTRAP The CSS framework. In this website we can create, edit and delete the
+            | notes with the help of Buttons. As this website has only frontend the created notes are saved in
+            | array so after reloading the notes will disappear but we can solve this problem by saving data into
+            | local storage or in external database with the help of backend. This website is hosted and working
+            | properly. To visit website 
+            a(href='http://notestaker.epizy.com') Click Here
+        #notesImg.pRight.spaceAround
+          img#notesD.w-50(src='  ./static/notesWebsite desktop view.png', alt='')
+          img#notesM.h-30(src='  ./static/notesWebsite mobile view.png', alt='')
+      //
+        <div class="project">
+        <div class="pLeft">
+        <h3>News Website</h3>
+        <p>This project is made with the help of the CSS framework Bootstrap. In this project the news are
+        fetched by an API called NEWS API using fetch function of javascript and then populated on page
+        with the help of js again. There are five catagories of news that you can read on this website.
+        To visit website <a href="">Click Here</a>
+        </p>
+        </div>
+        <div class="pRight">
+        <img src="  ./static/snakeWallpaper4.png" alt="">
+        </div>
+        </div>
+      .project
+        .pLeft
+          h3 Snake Game
+          p
+            | This is only a javasccript game made for the practice the js logic. in this project there is minimal
+            | use of HTML and CSS. This game working properly but you can play this game only on computers or
+            | devices which have keyboard attached to it. To play the game 
+            a(href='http://snakemafia.epizy.com') Click Here
+        .pRight.jCenter
+          img.w-50(src='  ./static/snake game.png', alt='')
+      .project
+        .pLeft
+          h3 Real Time Chat Application
+          p
+            | This is a Node.js project which use external module called socket.io which help to make two way
+            | communication between server and clint. express.js is used for routing and create server. pug is
+            | used as template engine. In this project people can join the group and can chat with their friends
+            | in real time.
+            // To visit website <a href="">Click Here</a>
+            | Currently this website is not hosted. It will be
+            | online very soon
+        .pRight.spaceAround
+          img.w-50(src='  ./static/chat app desktop view.png', alt='')
+          img.h-30(src='  ./static/chat app mobile view.png', alt='')
+    hr
+    footer
+      .info
+        h4 Phone
+        span 9405814464
+      .info
+        h4 Email
+        span pratikshinde7262@gmalil.com
+      .info
+        h4 Follow Me
+        a(href='https://www.linkedin.com/in/pratik-shinde-156993213')
+          img(src='  ./static/li.svg', alt='LI')
+        a(href='https://www.youtube.com/channel/UCRaj3KHYyN4MghIuujFMVEQ')
+          img(src='  ./static/yt.svg', alt='YT')
+      .copy
+        h4 &copy; 2022 By Pratik Shinde
+    script(src=' ./static/script.js')

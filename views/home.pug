@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='./static/style.css')
+    link(rel='stylesheet', href='./static/index.css')
+    title Home
+  body#body(onload='trans()')
+    #loader
+      img#loaderSvg(src='./static/loader.svg', alt='')
+    nav#nav.navBar
+      .top
+        .logo
+          h1
+            a#main.menuItems(href='/') Pratik Shinde
+          p Web Developer
+        div
+          img#ham(src='./static/ham.png', alt='')
+          ul.menu
+            li
+              a.menuItems(href='/resume') Resume
+            | |
+            li
+              a.menuItems(href='/project') Projects
+            | |
+            li
+              a.menuItems(href='/contact') Contact
+      .bottom
+        ul.bMenu
+          li
+            a.menuItems(href='/resume') Resume
+          li
+            a.menuItems(href='/project') Projects
+          li
+            a.menuItems(href='/contact') Contact
+    .container
+      #photo
+        img#img(src='./static/Pratik.png ', alt='myImg')
+      #text
+        h2 Hello
+        h3 A Bit About Me
+        p
+          | I am a Coder, Programmer and Developer having well knowledge and Command on HTML CSS JS and JAVA Learning Node.js. Looking for my first Internship, where I can learn and grow.
+    hr
+    footer
+      .info
+        h4 Phone
+        span 9405814464
+      .info
+        h4 Email
+        span pratikshinde7262@gmalil.com
+      .info
+        h4 Follow Me
+        a(href='https://www.linkedin.com/in/pratik-shinde-156993213')
+          img(src='./static/li.svg', alt='LI')
+        a(href='https://www.youtube.com/channel/UCRaj3KHYyN4MghIuujFMVEQ')
+          img(src='./static/yt.svg', alt='YT')
+      .copy
+        h4 &copy; 2022 By Pratik Shinde
+    script(src='./static/script.js')

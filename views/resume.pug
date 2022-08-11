@@ -1,0 +1,103 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='./static/style.css')
+    link(rel='stylesheet', href='./static/resume.css')
+    title Resume
+  body
+    #loader
+      img#loaderSvg(src='./static/loader.svg', alt='')
+    nav#nav.navBar
+      .top
+        .logo
+          h1
+            a#main.menuItems(href='/') Pratik Shinde
+          p Web Developer
+        div
+          img#ham(src='./static/ham.png', alt='')
+          ul.menu
+            li
+              a.menuItems(href='/resume ') Resume
+            | |
+            li
+              a.menuItems(href='/project ') Projects
+            | |
+            li
+              a.menuItems(href='/contact ') Contact
+      .bottom
+        ul.bMenu
+          li
+            a.menuItems(href='/resume ') Resume
+          li
+            a.menuItems(href='/project ') Projects
+          li
+            a.menuItems(href='/contact ') Contact
+    .mainContainer
+      h1 Resume
+      .work
+        .rLeft
+          h3 Work Experiance
+        .duration
+        .rInfo
+          p
+            | Currently I have no experiance in actual internship or job, i am looking for my first internship
+      hr
+      .education
+        .rLeft
+          h3 Education
+        .rRight
+          .infoContainer
+            .duration 2020-Present
+            .rInfo
+              h4 Mecanical Engineering
+              p
+                | I am a Mecanical Engineering student in JSPM&apos;s Rajashri Shahoo College Of Engineering Pune,
+                | completed my second year.I will be graduate in 2024 with BTech Degree.
+          .infoContainer
+            .duration 2018-2020
+            .rInfo
+              h4 Junior College
+              p
+                | I completed my junior college in sharda jr college latur maharashtra. I pass out 12th board
+                | exam with 70.69% and MHT-CET with 92 Percentile with scince stream
+          .infoContainer
+            .duration 2008-2018
+            .rInfo
+              h4 School
+              p
+                | I completed my school in Z.P High School Motegaon a small village in latur district. I pass
+                | out 10th with 91%
+      hr
+      .skills
+        .rLeft
+          h3 Skills
+        .duration
+        .rInfo
+          ul
+            li
+              | I have Expertise in java and programming logic. I learned java for Android Development.
+            li
+              | I have well knowledge of HTML CSS JAVASCRIPT and made some personal projects using them,
+              | including this website
+            li For BackEnd I learned Node.js and have well knowledge of it.
+            li I can Communicte with people very well.
+    hr
+    footer
+      .info
+        h4 Phone
+        span 9405814464
+      .info
+        h4 Email
+        span pratikshinde7262@gmalil.com
+      .info
+        h4 Follow Me
+        a(href='https://www.linkedin.com/in/pratik-shinde-156993213')
+          img(src='./static/li.svg', alt='LI')
+        a(href='https://www.youtube.com/channel/UCRaj3KHYyN4MghIuujFMVEQ')
+          img(src='./static/yt.svg', alt='YT')
+      .copy
+        h4 &copy; 2022 By Pratik Shinde
+    script(src='./static/script.js')
