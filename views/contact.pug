@@ -1,40 +1,12 @@
 doctype html
 html(lang='en')
   head
-    meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href=' ./static/style.css')
-    link(rel='stylesheet', href=' ./static/contact.css')
-    title Contact
+    include links 
+    link(rel='stylesheet', href='./static/css/contact.css')
   body
     #loader
       img#loaderSvg(src='  ./static/loader.svg', alt='')
-    nav#nav.navBar
-      .top
-        .logo
-          h1
-            a#main.menuItems(href='/') Pratik Shinde
-          p Web Developer
-        div
-          img#ham(src='  ./static/ham.png', alt='')
-          ul.menu
-            li
-              a.menuItems(href='/resume ') Resume
-            | |
-            li
-              a.menuItems(href='/project ') Projects
-            | |
-            li
-              a.menuItems(href='/contact ') Contact
-      .bottom
-        ul.bMenu
-          li
-            a.menuItems(href='/resume ') Resume
-          li
-            a.menuItems(href='/project ') Projects
-          li
-            a.menuItems(href='/contact ') Contact
+    include navBar 
     .mainContainer
       h1 Contact
       .container
@@ -84,19 +56,5 @@ html(lang='en')
           </form>
           </div>
     hr
-    footer
-      .info
-        h4 Phone
-        span 9405814464
-      .info
-        h4 Email
-        span pratikshinde7262@gmalil.com
-      .info
-        h4 Follow Me
-        a(href='https://www.linkedin.com/in/pratik-shinde-156993213')
-          img(src='  ./static/li.svg', alt='LI')
-        a(href='https://www.youtube.com/channel/UCRaj3KHYyN4MghIuujFMVEQ')
-          img(src='  ./static/yt.svg', alt='YT')
-      .copy
-        h4 &copy; 2022 By Pratik Shinde
+    include footer
     script(src=' ./static/script.js')
